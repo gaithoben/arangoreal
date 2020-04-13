@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "lodash.isstring": "^4.0.1",
+    "request-easy": "^2.0.1"
+  },
+  "name": "arangoreal",
+  "version": "4.0.2",
+  "description": "`arangoreal` pushs ArangoDB changes in realtime to you",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaithoben/arangoreal.git"
+  },
+  "keywords": [
+    "arangodb",
+    "push",
+    "realtime",
+    "watch",
+    "monitor"
+  ],
+  "author": "Manuel Baesler",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gaithoben/arangoreal/issues"
+  },
+  "homepage": "https://github.com/gaithoben/arangoreal#readme"
+}

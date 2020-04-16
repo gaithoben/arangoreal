@@ -64,9 +64,11 @@ class ArangoChair extends EventEmitter {
         const collectionName = `${data._id}`.split("/")[0];
 
         const colConf = this.collectionsMap.get(collectionName);
+
         if (undefined === colConf) return;
 
         const events = colConf.get("events");
+
         const event = this.inferEventType(tid, type);
 
         if (0 !== events.size && !events.has(event)) return;
@@ -149,7 +151,7 @@ class ArangoChair extends EventEmitter {
   inferEventType(tid, type) {
     if (type === 2300) {
       // type 2300 means insert or update
-      return tid === "0" ? "insert" : "update"; // the tid tells us which of the above it is
+      return "insert/update"; // the tid tells us which of the above it is
     }
 
     if (type === 2302) {

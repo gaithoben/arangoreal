@@ -4,7 +4,7 @@
     "request-easy": "^2.0.1"
   },
   "name": "arangoreal",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "`arangoreal` pushs ArangoDB changes in realtime to you",
   "main": "index.js",
   "devDependencies": {},
